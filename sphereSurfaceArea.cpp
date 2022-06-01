@@ -6,17 +6,17 @@
 #include <iostream>
 #include <cmath>
 
-float VolumeConversion(float radius) {
-    float volume;
+float SurfaceAreaSphereFunction(float radius) {
+    float surfaceArea;
 
-    volume = M_PI * (radius * radius) * 4;
+    surfaceArea = M_PI * (radius * radius) * 4;
 
-    return volume;
+    return surfaceArea;
 }
 main() {
     std::string radiusUserString;
     float radiusUser;
-    float VolumeCalculation;
+    float SphereCalculation;
 
         // input
     std::cout << "Enter your radius! (mm): ";
@@ -25,9 +25,9 @@ main() {
 
     try {
         radiusUser = std::stoi(radiusUserString);
-        VolumeCalculation = VolumeConversion(radiusUser);
-        std::cout << "The volume is " << VolumeCalculation  <<
-        "mm³" << std::endl;
+        SphereCalculation = SurfaceAreaSphereFunction(radiusUser);
+        std::cout << "The surfaceArea is " << SphereCalculation  <<
+        " mm²" << std::endl;
     } catch (std::invalid_argument) {
         std::cout << "\n Invalid integer!" << std::endl;
     }
