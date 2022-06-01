@@ -1,7 +1,7 @@
 // Copyright (c) 2022 Jackson Naufal All rights reserved
 // Created By Jackson Naufal
 // Created On March 2022
-// This is a loop adder
+// This is a sphere area function calculator
 
 #include <iostream>
 #include <cmath>
@@ -9,7 +9,7 @@
 float SurfaceAreaSphereFunction(float radius) {
     float surfaceArea;
 
-    surfaceArea = M_PI * (radius * radius) * 4;
+    surfaceArea = M_PI * pow(radius , 2) * 4;
 
     return surfaceArea;
 }
